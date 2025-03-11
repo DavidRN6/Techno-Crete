@@ -17,7 +17,7 @@ function Navbar() {
     <nav
       id="navbar"
       className="w-full fixed flex justify-between items-center bg-white text-black
-    px-4 py-3 lg:py-2 top-0 z-50"
+    px-4 py-3 lg:py-2 top-0 z-50 shadow-lg"
     >
       <h1 id="logo" className="md:text-2xl text-lg font-bold">
         TechnoCrete <span className="text-yellow-500">Constructions</span>

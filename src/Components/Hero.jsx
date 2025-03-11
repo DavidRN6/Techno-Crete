@@ -32,11 +32,10 @@ function Hero() {
         </motion.h1>
         <div className="w-[120px] h-[6px] bg-yellow-500 mx-auto mt-2"></div>
         <p className="text-white text-[18px] w-[100%] md:w-[75%] lg:w-[65%]  mx-auto mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum
-          doloribus recusandae pariatur vero tempora similique, ad minima eius
-          quasi!
+        We Strive to provide the best professional to make your projects a
+        constraction masterpiece, something unique and unmatched.
         </p>
-        <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2">
+        <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2 font-medium">
           Contact Us{" "}
           <span>
             <FaArrowRight />

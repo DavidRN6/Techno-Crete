@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
-// import Footer from './Components/Footer'
+import Footer from './Components/Footer'
 import Projects from "./pages/Projects";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
