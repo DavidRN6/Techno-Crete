@@ -68,11 +68,13 @@ function About() {
         <img
           src={aboutImg1}
           alt="about-img-1"
+          loading="lazy"
           className="w-[200px] md:w-[250px] lg:w-[300px] border-4 border-white absolute -top-[5rem] left-[6rem]"
         />
         <img
           src={aboutImg2}
           alt="about-img-2"
+          loading="lazy"
           className="w-[230px] md:w-[250px] lg:w-[350px]  mr-10"
         />
       </motion.div>
