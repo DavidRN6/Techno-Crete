@@ -13,7 +13,6 @@ function Hero() {
       <img
         src={Image2}
         alt="Hero Background"
-        loading="eager"
         className="absolute inset-0 w-full h-full object-cover -z-11"
       />
       <div className="absolute inset-0 bg-black/30 z-10"></div>
