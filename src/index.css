@@ -12,6 +12,17 @@
   4. Responsive
 */
 
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 /*==============
   1. General
@@ -52,6 +63,35 @@ body {
 @media (max-width: 350px) {
   #logo {
     font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+  form div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  #email,
+  #message,#number {
+    width: 90%;
+    margin-left: 0;
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+  }
+  .submit {
+    width: 30%;
+    align-self: center;
+  }
+}
+@media (max-width: 799px) {
+  #animation {
+    display: none;
   }
 }
 @media (min-width: 1200px) {

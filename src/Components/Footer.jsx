@@ -18,7 +18,6 @@ function Footer() {
     <section id="footer" style={footerImg} className="text-white">
       <div className="container">
         <div className="grid md:grid-cols-3 pb-44 pt-5">
-
           {/* ===============
             Company Details
           =================== */}
@@ -27,11 +26,16 @@ function Footer() {
             <h1 id="logo" className="md:text-2xl text-lg font-bold">
               TechnoCrete <span className="text-yellow-500">Constructions</span>
             </h1>
-            <h2 className="flex items-center gap-2 mb-2 mt-5">
-              <MdOutlineEmail />
-              yugiohgxd600@gmail.com
-            </h2>
-            <h4>&copy; TechnoCrete | All Rights Reserved</h4>
+            <div className="mt-6">
+              <div className="flex items-center gap-3">
+                <FaLocationArrow />
+                <p>39, El-khalifa El-Maamoun ST, Roxy, Cairo</p>
+              </div>
+              <h2 className="flex items-center gap-2 mb-2 mt-5">
+                <MdOutlineEmail />
+                TC@TECHNOCRETE-CONSTRUCTIONS.COM
+              </h2>
+            </div>
           </div>
 
           {/* ===========
@@ -40,9 +44,7 @@ function Footer() {
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
             <div>
               <div className="py-8 px-4">
-                <h1 className="text-xl font-bold text-justify mb-3">
-                  COMPANY
-                </h1>
+                <h1 className="text-xl font-bold text-justify mb-3">COMPANY</h1>
                 <ul className="flex flex-col gap-3">
                   <li>HOME</li>
                   <li>ABOUT</li>
@@ -68,14 +70,15 @@ function Footer() {
                 </a>
               </div>
               <div className="mt-6">
-                <div className="flex items-center gap-3">
-                  <FaLocationArrow />
-                  <p>Egypt, Cairo</p>
-                </div>
-                <div className="flex items-center gap-3 mt-3">
-                  <IoIosCall />
-                  <p>01200000000</p>
-                </div>
+              <div className="flex items-center gap-3 mt-3">
+                <IoIosCall />
+                <p>01001600557</p>
+              </div>
+              <div className="flex items-center gap-3 mt-3">
+                <IoIosCall />
+                <p>01111200854</p>
+              </div>
+                <h4 className="mt-3">&copy; TechnoCrete | All Rights Reserved</h4>
               </div>
             </div>
           </div>
