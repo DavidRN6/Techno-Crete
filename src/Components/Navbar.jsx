@@ -3,6 +3,11 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 
 function Navbar() {
+
+/*==============
+  1. Menu Function
+===============*/
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,7 +21,7 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="w-full fixed flex justify-between items-center bg-white text-black
+      className="w-full fixed flex justify-between items-center bg-white text-gray-800
     px-4 py-3 lg:py-2 top-0 z-50 shadow-lg"
     >
       <h1 id="logo" className="md:text-2xl text-lg font-bold">
@@ -24,21 +29,23 @@ function Navbar() {
       </h1>
 
       <ul className="lg:flex justify-center items-center gap-6 hidden">
-        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-black transition-all duration-200">
+        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           HOME
         </li>
-        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-black transition-all duration-200">
+        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           ABOUT
         </li>
-        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-black transition-all duration-200">
+        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           PROJECTS
         </li>
-        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-black transition-all duration-200">
+        <li className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           CONTACT US
         </li>
       </ul>
 
-      {/* menu */}
+      {/* ===========
+        Monile Menu
+      ===============*/}
 
       <div
         className="flex justify-between items-center lg:hidden"
@@ -61,16 +68,16 @@ function Navbar() {
         onClick={closeMenu}
       >
         <ul className="flex flex-col gap-2 w-full items-center justify-center">
-          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-black">
+          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
             HOME
           </li>
-          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-black">
+          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
             ABOUT
           </li>
-          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-black">
+          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
             PROJECTS
           </li>
-          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-black">
+          <li className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
             CONTACT US
           </li>
         </ul>

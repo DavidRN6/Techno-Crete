@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ======================
+  table of contents
+=========================
+
+  1. General
+  2. Scrollbar
+  3. Scroll2Top
+  4. Responsive
+*/
+
 
 /*==============
-  General
+  1. General
 ===============*/
 
 * {
@@ -17,13 +27,16 @@ body {
   background: #f5f5f5;
 }
 
+/*============
+  2. Scrollbar
+==============*/
 
 ::-webkit-scrollbar {
   width: 0.8rem;
 }
 ::-webkit-scrollbar-track {
   border: 7px solid white;
-} 
+}
 ::-webkit-scrollbar-thumb {
   background: #eab308;
   border-radius: 1rem;
@@ -32,9 +45,8 @@ body {
   background: #555;
 }
 
-
 /*============
-  Responsive
+  3. Responsive
 ==============*/
 
 @media (max-width: 350px) {

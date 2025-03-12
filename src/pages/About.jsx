@@ -10,23 +10,24 @@ function About() {
       id="about"
       className="flex flex-col md:flex-row md:h-[80vh] py-2 px-[10%] mt-4 justify-between items-center gap-6"
     >
-      <motion.div 
+      {/* =============
+        left Section
+      ================= */}
+
+      <motion.div
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="w-full md:w-[50%] text-center md:text-left mb-[100px]">
-        <span 
-
-          className="block mb-2 text-xl font-bold text-yellow-500">
+        className="w-full md:w-[50%] text-center md:text-left mb-[100px]"
+      >
+        <span className="block mb-2 text-xl font-bold text-yellow-500">
           ABOUT US
         </span>
-        <h2
-
-          className="mb-6 font-bold text-3xl lg:text-4xl">
+        <h2 className="mb-6 font-bold text-3xl lg:text-4xl text-gray-800">
           We Provide The Best <br /> Service To Build
         </h2>
 
-        <p>
+        <p className="text-gray-600 font-medium">
           TechnoCrete for Restoration and Structural Strengthening TechnoCrete
           was founded in 2010 with a vision to provide the best advanced
           engineering solutions in the field of restoration and structural
@@ -35,8 +36,7 @@ function About() {
           guarantees for all its work.
         </p>
 
-        <div
-          className="flex justify-center md:justify-start gap-9 mt-6">
+        <div className="flex justify-center md:justify-start gap-9 mt-6">
           <div className="flex flex-col items-center">
             <p className="font-bold text-xl">100+</p>
             <p className="text-sm font-medium">Projects Complete</p>
@@ -55,11 +55,16 @@ function About() {
         </button>
       </motion.div>
 
-      <motion.div 
+      {/* =============
+        Right Section
+      ================= */}
+
+      <motion.div
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="relative flex justify-center items-center">
+        className="relative flex justify-center items-center"
+      >
         <img
           src={aboutImg1}
           alt="about-img-1"

@@ -7,11 +7,16 @@ function Hero() {
   return (
     <div
       id="hero"
-      className="bg-black relative w-full lg:h-screen sm:h-[750px] h-[650px] m-auto lg:pt-[0px] px-[20px] lg:px-[150px] flex
-      justify-between items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center
-      before:absolute before:inset-0 before:bg-black/30 -z-11"
-      style={{ backgroundImage: `url(${Image2})` }}
+      className="bg-gray-800 relative w-full lg:h-screen sm:h-[750px] h-[650px] m-auto lg:pt-[0px] px-[20px] lg:px-[150px] flex
+      justify-between items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center"
     >
+      <img
+        src={Image2}
+        alt="Hero Background"
+        loading="eager"
+        className="absolute inset-0 w-full h-full object-cover -z-11"
+      />
+      <div className="absolute inset-0 bg-black/30 z-10"></div>
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -31,9 +36,9 @@ function Hero() {
           We will build your dream
         </motion.h1>
         <div className="w-[120px] h-[6px] bg-yellow-500 mx-auto mt-2"></div>
-        <p className="text-white text-[18px] w-[100%] md:w-[75%] lg:w-[65%]  mx-auto mt-4">
-        We Strive to provide the best professional to make your projects a
-        constraction masterpiece, something unique and unmatched.
+        <p className="text-white text-[18px] w-[100%] md:w-[75%] lg:w-[65%] mx-auto mt-4">
+          We Strive to provide the best professional to make your projects a
+          construction masterpiece, something unique and unmatched.
         </p>
         <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2 font-medium">
           Contact Us{" "}

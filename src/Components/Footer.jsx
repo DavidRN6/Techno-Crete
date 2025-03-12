@@ -18,7 +18,11 @@ function Footer() {
     <section id="footer" style={footerImg} className="text-white">
       <div className="container">
         <div className="grid md:grid-cols-3 pb-44 pt-5">
-          {/* company details */}
+
+          {/* ===============
+            Company Details
+          =================== */}
+
           <div className="py-8 px-4">
             <h1 id="logo" className="md:text-2xl text-lg font-bold">
               TechnoCrete <span className="text-yellow-500">Constructions</span>
@@ -30,7 +34,9 @@ function Footer() {
             <h4>&copy; TechnoCrete | All Rights Reserved</h4>
           </div>
 
-          {/* Footer Links */}
+          {/* ===========
+            Company Links
+          =============== */}
           <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
             <div>
               <div className="py-8 px-4">
@@ -48,7 +54,9 @@ function Footer() {
 
             <div></div>
 
-            {/* social links */}
+            {/* ==========
+            Social Links 
+            ==============*/}
 
             <div className="ml-4 md:ml-0">
               <div className="flex items-center gap-3 mt-6">
