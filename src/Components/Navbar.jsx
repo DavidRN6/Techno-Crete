@@ -2,13 +2,13 @@ import { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-router";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-
     setIsMenuOpen(false);
   };
 
@@ -18,10 +18,6 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
   };
 
   return (
@@ -66,7 +62,34 @@ function Navbar() {
         </div>
       </div>
 
-      <div
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-100%" }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="w-full bg-white p-4 absolute top-[45px] md:top-[51px] left-0 shadow-md"
+          >
+            <ul className="flex flex-col gap-2 w-full items-center justify-center">
+              <Link to="/" onClick={() => scrollToSection("home")} className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
+                HOME
+              </Link>
+              <Link to="/" onClick={() => scrollToSection("about")} className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
+                ABOUT
+              </Link>
+              <Link to="/projects" className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
+                PROJECTS
+              </Link>
+              <Link to="/" onClick={() => scrollToSection("contact")} className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800">
+                CONTACT US
+              </Link>
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* <div
         className={`${
           isMenuOpen ? "flex" : "hidden"
         } w-full h-fit bg-white p-4 absolute
@@ -87,7 +110,7 @@ function Navbar() {
             CONTACT US
           </Link>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 }

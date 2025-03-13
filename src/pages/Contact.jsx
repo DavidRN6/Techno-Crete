@@ -88,7 +88,6 @@ function Contact() {
 
         <div id="animation">
           <Lottie
-            loop={false}
             className="lg:h-[350px] md:h-[300px]"
             animationData={contactUs}
           />
