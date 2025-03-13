@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 import { FaArrowRight } from "react-icons/fa6";
-import Image2 from "../assets/photos/home1.jpeg";
+import Image2 from "../assets/photos/home1.webp";
 
 function Hero() {
   const scrollToSection = (id) => {

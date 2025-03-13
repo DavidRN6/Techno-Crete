@@ -1,4 +1,4 @@
-import footerPattern from "../assets/photos/footer-pattern.jpg";
+import footerPattern from "../assets/photos/footer-pattern.webp";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";

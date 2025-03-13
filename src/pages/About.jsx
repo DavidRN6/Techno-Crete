@@ -1,8 +1,8 @@
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
-import aboutImg1 from "../assets/photos/about-img-1.png";
-import aboutImg2 from "../assets/photos/about-img-2.png";
+import aboutImg1 from "../assets/photos/about-img-1.webp";
+import aboutImg2 from "../assets/photos/about-img-2.webp";
 
 function About() {
   const scrollToSection = (id) => {
