@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
-import Constructions from "../animation/Constructions.json";
+import contactUs from "../animation/contact us.json";
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 
 function Contact() {
   return (
-    <section id="contact" className="mt-4">
+    <section id="contact" className="pt-14">
       {/*=========
         Title
       ============*/}
@@ -18,8 +18,8 @@ function Contact() {
       >
         <div className="inline-flex gap-2 items-center font-bold text-3xl lg:text-4xl py-3">
           <p className="w-8 sm:w-12 h-[1px] sm:h-[2px] bg-gray-800"></p>
-          <p className="text-yellow-500">
-            CONTACT <span className="text-gray-800">US</span>
+          <p className="text-gray-800">
+            CONTACT <span className="text-yellow-500">US</span>
           </p>
           <p className="w-8 sm:w-12 h-[1px] sm:h-[2px] bg-gray-800"></p>
         </div>
@@ -88,8 +88,9 @@ function Contact() {
 
         <div id="animation">
           <Lottie
-            className="lg:h-[350px] md:h-[250px]"
-            animationData={Constructions}
+            loop={false}
+            className="lg:h-[350px] md:h-[300px]"
+            animationData={contactUs}
           />
         </div>
       </motion.div>

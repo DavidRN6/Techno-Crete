@@ -4,9 +4,13 @@ import { FaArrowRight } from "react-icons/fa6";
 import Image2 from "../assets/photos/home1.jpeg";
 
 function Hero() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
-      id="hero"
+      id="home"
       className="bg-gray-800 relative w-full lg:h-screen sm:h-[750px] h-[650px] m-auto lg:pt-[0px] px-[20px] lg:px-[150px] flex
       justify-between items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center"
     >
@@ -40,11 +44,14 @@ function Hero() {
           We Strive to provide the best professional to make your projects a
           construction masterpiece, something unique and unmatched.
         </p>
-        <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2 font-medium">
+        <button
+          onClick={() => scrollToSection("contact")}
+          className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105"
+        >
           Contact Us{" "}
           <span>
             <FaArrowRight />
-          </span>
+          </span>{" "}
         </button>
       </motion.div>
     </div>

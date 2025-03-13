@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from './Components/Footer'
-import Projects from "./pages/Projects";
+import Product from "./pages/Product";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/products" element={<Product />} />
       </Routes>
 
       <Footer />

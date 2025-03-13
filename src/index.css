@@ -88,6 +88,9 @@ body {
     width: 30%;
     align-self: center;
   }
+  #about {
+    padding-top: 30px;
+  }
 }
 @media (max-width: 799px) {
   #animation {

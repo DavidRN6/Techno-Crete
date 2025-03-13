@@ -5,6 +5,10 @@ import aboutImg1 from "../assets/photos/about-img-1.png";
 import aboutImg2 from "../assets/photos/about-img-2.png";
 
 function About() {
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="about"
@@ -47,7 +51,10 @@ function About() {
           </div>
         </div>
 
-        <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-6 mx-auto md:mx-0 flex items-center gap-2 font-medium">
+        <button
+          onClick={() => scrollToSection("projects")}
+          className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-6 mx-auto md:mx-0 flex items-center gap-2 font-medium transition duration-300 hover:scale-105"
+        >
           Projects{" "}
           <span>
             <FaArrowRight />
@@ -55,9 +62,9 @@ function About() {
         </button>
       </motion.div>
 
-      {/* =============
+      {/*===============
         Right Section
-      ================= */}
+      ==================*/}
 
       <motion.div
         initial="hidden"

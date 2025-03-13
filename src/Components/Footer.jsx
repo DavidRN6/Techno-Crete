@@ -62,7 +62,7 @@ function Footer() {
 
             <div className="ml-4 md:ml-0">
               <div className="flex items-center gap-3 mt-6">
-                <a href="">
+                <a href="https://www.facebook.com/TechnoCrete12?rdid=4sq1ASVnmLFtWJ7M&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DDBd6QrJJ%2F#" target="_blank">
                   <FaFacebookSquare className="text-3xl hover:-translate-y-1 hover:scale-105 duration-300" />
                 </a>
                 <a href="">
