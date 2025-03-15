@@ -12,9 +12,9 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
-/*==============
+/*==================
   1. Menu Function
-===============*/
+====================*/
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -37,7 +37,7 @@ function Navbar() {
         <Link to="/" onClick={() => scrollToSection("about")} className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           ABOUT
         </Link>
-        <Link to="/products" className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
+        <Link to="/projects" className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">
           PROJECTS
         </Link>
         <Link to="/" onClick={() => scrollToSection("contact")} className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200">

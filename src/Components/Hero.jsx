@@ -45,10 +45,10 @@ function Hero() {
           construction masterpiece, something unique and unmatched.
         </p>
         <button
-          onClick={() => scrollToSection("contact")}
+          onClick={() => scrollToSection("projects")}
           className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-2 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105"
         >
-          Contact Us{" "}
+          Projects{" "}
           <span>
             <FaArrowRight />
           </span>{" "}

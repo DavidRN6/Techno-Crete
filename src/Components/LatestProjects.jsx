@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
-import ProductItem from "./productItem";
+import ProductItem from "./ProductItem";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router";
 
@@ -42,7 +42,7 @@ function LatestProjects() {
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="flex justify-center flex-wrap gap-16 px-[7%]"
+        className="flex justify-center flex-wrap gap-16 md:px-[1%] lg:px-[4%]"
       >
         {latestProjects.map((item, index) => (
           <ProductItem
@@ -51,18 +51,19 @@ function LatestProjects() {
             image={item.image}
             name={item.name}
             description={item.description}
+            owner={item.owner}
           />
         ))}
       </motion.div>
 
-      <Link to="/products">
-        <button className="bg-yellow-500 text-base py-3 px-6 rounded-xl mt-14 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105">
-          View All Projects{" "}
-          <span>
-            <FaArrowRight />
-          </span>
-        </button>
-      </Link>
+        <Link to="/projects">
+          <button className="bg-yellow-500 text-base py-3 px-6 rounded-xl mt-14 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105">
+            View All Projects{" "}
+            <span>
+              <FaArrowRight />
+            </span>
+          </button>
+        </Link>
     </section>
   );
 }

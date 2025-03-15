@@ -1,136 +1,364 @@
-import img1 from "./1.webp";
-import img2 from "./2.webp";
-import img3 from "./3.webp";
+//==========================
+// نافورة حديقة الدراجات
+//==========================
+import img1 from "./نافورة حديقة الدراجات/1.webp";
+import img2 from "./نافورة حديقة الدراجات/2.webp";
+import img3 from "./نافورة حديقة الدراجات/3.webp";
+import img4 from "./نافورة حديقة الدراجات/4.webp";
+import img5 from "./نافورة حديقة الدراجات/5.webp";
+import img6 from "./نافورة حديقة الدراجات/6.webp";
+
+//==================================
+// مصنع مودرن سيكا - لمواد العزل
+//==================================
+import img7 from "./مصنع مودرن سيكا - لمواد العزل/1.webp";
+import img8 from "./مصنع مودرن سيكا - لمواد العزل/2.webp";
+import img9 from "./مصنع مودرن سيكا - لمواد العزل/3.webp";
+import img10 from "./مصنع مودرن سيكا - لمواد العزل/4.webp";
+import img11 from "./مصنع مودرن سيكا - لمواد العزل/5.webp";
+
+//============================================
+// مستشفي التأمين الصحي مدينة نصر ( جاري )
+//============================================
+import img12 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/1.webp";
+import img13 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/2.webp";
+import img14 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/3.webp";
+import img15 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/4.webp";
+import img16 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/5.webp";
+import img17 from "./مستشفي التأمين الصحي مدينة نصر ( جاري )/6.webp";
+
+//=========================
+// مستشفى الاقصر الدولى
+//=========================
+import img18 from "./مستشفي الأقصر الدولي/1.webp";
+import img19 from "./مستشفي الأقصر الدولي/2.webp";
+import img20 from "./مستشفي الأقصر الدولي/3.webp";
+import img21 from "./مستشفي الأقصر الدولي/4.webp";
+import img22 from "./مستشفي الأقصر الدولي/5.webp";
+import img23 from "./مستشفي الأقصر الدولي/6.webp";
+
+//===================================================
+// مباني إدارية الكيان العسكري - العاصمة الإدارية
+//===================================================
+import img24 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/1.webp";
+import img25 from ".//مباني إدارية الكيان العسكري - العاصمة الإدارية/2.webp";
+import img26 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/3.webp";
+import img27 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/4.webp";
+import img28 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/5.webp";
+import img29 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/6.webp";
+import img30 from "./مباني إدارية الكيان العسكري - العاصمة الإدارية/7.webp";
+
+//===================================================
+// كنيسة العذراء مريم طريق الكباش الأثري - الأقصر
+//===================================================
+import img31 from "./كنيسة العذراء مريم طريق الكباش الأثري - الأقصر/1.webp";
+import img32 from "./كنيسة العذراء مريم طريق الكباش الأثري - الأقصر/2.webp";
+
+//=================
+// قبة معهد ناصر
+//=================
+import img33 from "./قبة معهد ناصر/1.webp";
+import img34 from "./قبة معهد ناصر/2.webp";
+import img35 from "./قبة معهد ناصر/3.webp";
+import img36 from "./قبة معهد ناصر/4.webp";
+
+//============================================
+// فندق تريومف ( الشويفات ) التجمع الخامس
+//============================================
+import img37 from "./فندق تريومف ( الشويفات ) التجمع الخامس/1.webp";
+import img38 from ".//فندق تريومف ( الشويفات ) التجمع الخامس/2.webp";
+
+//========================================
+// ترميم وعزل فيلا 125مرتفعات القطامية
+//========================================
+import img39 from "./ترميم وعزل فيلا 125مرتفعات القطامية/1.webp";
+import img40 from "./ترميم وعزل فيلا 125مرتفعات القطامية/2.webp";
+import img41 from "./ترميم وعزل فيلا 125مرتفعات القطامية/3.webp";
+import img42 from "./ترميم وعزل فيلا 125مرتفعات القطامية/4.webp";
+
+//=======================================
+// ترميم وتدعيم مستشفي سمنود المركزي 
+//=======================================
+import img43 from "./ترميم وتدعيم مستشفي سمنود المركزي/1.webp";
+import img44 from "./ترميم وتدعيم مستشفي سمنود المركزي/2.webp";
+import img45 from "./ترميم وتدعيم مستشفي سمنود المركزي/3.webp";
+
+//==============================================================
+// تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )
+//==============================================================
+import img46 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/1.webp";
+import img47 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/2.webp";
+import img48 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/3.webp";
+import img49 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/4.webp";
+import img50 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/5.webp";
+import img51 from "./تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )/6.webp";
+
+//==============================================================
+// تدعيم بشرائح الكربون فيبر بنك HSBC كورنيش النيل المعادي
+//==============================================================
+import img52 from "./تدعيم بشرائح الكربون فيبر بنك HSBC كورنيش النيل المعادي/1.webp";
+import img53 from "./تدعيم بشرائح الكربون فيبر بنك HSBC كورنيش النيل المعادي/2.webp";
+import img54 from "./تدعيم بشرائح الكربون فيبر بنك HSBC كورنيش النيل المعادي/3.webp";
+
+//====================
+// بنك الإمارات دبي
+//====================
+import img55 from "./بنك الإمارات دبي/1.webp";
+import img56 from "./بنك الإمارات دبي/2.webp";
+
+//=============================
+// المدخل الرئيسي معهد ناصر
+//=============================
+import img57 from "./المدخل الرئيسي معهد ناصر/1.webp";
+import img58 from "./المدخل الرئيسي معهد ناصر/2.webp";
+import img59 from "./المدخل الرئيسي معهد ناصر/3.webp";
+import img60 from "./المدخل الرئيسي معهد ناصر/4.webp";
+
+//==============================
+// الصالون الاخضر بالاسماعيلية
+//==============================
+import img61 from "./الصالون الاخضر بالاسماعيلية/1.webp";
+import img62 from "./الصالون الاخضر بالاسماعيلية/2.webp";
+import img63 from "./الصالون الاخضر بالاسماعيلية/3.webp";
+
+//=====================================================
+// الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )
+//=====================================================
+import img64 from "./الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )/1.webp";
+import img65 from "./الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )/2.webp";
+import img66 from "./الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )/3.webp";
+import img67 from "./الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )//4.webp";
+
+//===================
+// الإستشعار عن بعد
+//===================
+import img68 from "./الإستشعار عن بعد/1.webp";
+import img69 from "./الإستشعار عن بعد/2.webp";
+import img70 from "./الإستشعار عن بعد/3.webp";
+
+
+
+
+
+
+
+
+
 
 export const products = [
   {
     id: 1,
-    name: "Shopsy",
-    category: "react",
-    description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    image: [img1],
+    name: "نافورة حديقة الدراجات",
+    image: [img1, img2, img3, img4, img5, img6],
+    category: "HTML",
+    description: "...",
+    owner: "..",
+    time: ".",
   },
   {
     id: 2,
-    name: "My Travel Journal",
-    category: "react",
+    name: "مستشفي التأمين الصحي مدينة نصر ( جاري )",
+    image: [img7, img8, img9, img10, img11],
+    category: "CSS",
     description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
-    image: [img2],
+      "معالجة جميع العناصر الانشائية اعمدة - كمر - بلاطات مسطح ما تم تنفيذة 1600 متر مسطح",
+    owner: "المالك : الهيئة العامة للتأمين الصحي",
+    time: "خلال المدة : أغسطس 2022حتي نوفمبر 2024",
   },
   {
     id: 3,
-    name: "Coffee",
-    category: "javascript",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
-    image: [img3],
+    name: "مصنع مودرن سيكا - لمواد العزل",
+    image: [img12, img13, img14, img15, img16, img17],
+    category: "JavaScript",
+    description: "ترميم وتدعيم أرضيات مصنع مودرن سيكا - لمواد العزل مدينة بدر",
+    owner: "المالك : سيكا مصر لكيماويات مواد البناء",
+    time: "مدة التنفيذ : ٣٠ يوم مع عدم توقف خطوط الإنتاج الكمية المنفذة : 1500 م٢",
+
+    //new
+    info1: "المقاول العام : تكنوكريت للإنشاءات الحديثة",
+    info2: "الإستشاري : سيكا مصر",
   },
   {
     id: 4,
-    name: "Shopsy",
-    category: "react",
+    name: "مستشفى الاقصر الدولى",
+    image: [img18, img19, img20, img21, img22, img23],
+    category: "React",
     description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    image: [img1],
+      "تدعيم بلاطات داخليه بإستخدام كمر حديد بمستشفي الأقصر الدولي و تنفيذ بلاطات كابولية مستجدة",
+    owner: "إستشاري المالك : كلية الهندسة جامعة أسيوط",
+    time: "مدة التنفيذ : ٣٠ يوم مع عدم توقف خطوط الإنتاج الكمية المنفذة : 1500 م٢",
+
+    //new
+    info1: "المقاول العام : شركة تاور للإنشاءات و العمارة",
+    info2: "إستشاري المقاول : كلية الهندسة جامعة عين شمس",
   },
   {
     id: 5,
-    name: "My Travel Journal",
-    category: "react",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
-    image: [img2],
+    name: "مباني إدارية الكيان العسكري - العاصمة الإدارية",
+    image: [img24, img25, img26, img27, img28, img29, img30],
+    category: "Tailwind",
+    description: "ترميم وتدعيم مباني إدارية الكيان العسكري - العاصمة الإدارية",
+    owner: "المالك : الكيان العسكرى",
+    time: "...",
+
+    //new
+    info1: "المقاول العام : الشركة الدولية للتوريدات الهندسية والمقاولات",
+    info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة",
   },
   {
     id: 6,
-    name: "Coffee",
-    category: "javascript",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
-    image: [img3],
+    name: "كنيسة العذراء مريم طريق الكباش الأثري - الأقصر",
+    image: [img31, img32],
+    category: "Bootstrap",
+    description: "المشروع تدعيم أساسات",
+    owner: "المالك : الكنيسة",
+    time: "مدة التنفيذ : ٨ أيام ( ٢٤ ساعة عمل يوميا ً )",
+
+    //new
+    info1: "تحت إشراف الهيئة الهندسية للقوات المسلحة",
+    info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة",
   },
   {
     id: 7,
-    name: "Shopsy",
-    category: "react",
-    description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    image: [img1],
+    name: "قبة معهد ناصر",
+    image: [img33, img34, img35, img36],
+    category: "Node",
+    description: "...",
+    owner: "المالك : وزارة الصحة",
+    time: "...",
+
+    //new
+    info1: "المقاول العام : شركة تاور للإنشاءات و العمارة",
+    info2: "الاستشاري: جامعة عين شمس أ. د/ نصر عيد",
   },
   {
     id: 8,
-    name: "My Travel Journal",
-    category: "react",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
-    image: [img2],
+    name: "فندق تريومف ( الشويفات ) التجمع الخامس",
+    image: [img38, img37],
+    category: "Mongo",
+    description: "المشروع معالجة وحقن فواصل ومعالجة تسرب مياه حمام السباحة الرئيسي",
+    owner: "المالك : مجموعة فنادق تريومف مصر",
+    time: "مدة التنفيذ ١٥ يوم",
+
+    //new
+    info1: "...",
+    info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة - إدارة المشروعات الكبري",
   },
   {
     id: 9,
-    name: "Coffee",
-    category: "javascript",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
-    image: [img3],
+    name: "ترميم وعزل فيلا 125مرتفعات القطامية",
+    image: [img39, img40, img41, img42],
+    category: "HTML",
+    description: "الكمية المنفذة : ٢١٠٠ متر مسطح",
+    owner: "المالك : شركة تروبي ١ للسياحة",
+    time: "مده التنفيذ : ٥٠ يوم",
+
+    //new
+    info1: "...",
+    info2: "الإستشاري : مكسيموس مجدي",
   },
   {
     id: 10,
-    name: "Shopsy",
-    category: "react",
-    description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    image: [img1],
+    name: "مستشفى سمنود المركزي",
+    image: [img43, img44, img45],
+    category: "CSS",
+    description: "ترميم وتدعيم مستشفي سمنود المركزي",
+    owner: "المالك : وزارة الصحة والسكان",
+    time: "...",
+
+    //new
+    info1: "المقاول العام : وادي النيل",
+    info2: "الاستشاري : كلية الهندسة - جامعة المنصورة",
   },
   {
     id: 11,
-    name: "My Travel Journal",
-    category: "react",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
-    image: [img2],
+    name: "تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )",
+    image: [img46, img47, img48, img49, img50, img51],
+    category: "JavaScript",
+    description: "تدعيم بلاطات داخليه و بلاطات كابولية شاليهات قرية اورلاندوا العين السخنة",
+    owner: "المالك : شركة الطيار السعودية",
+    time: "...",
+
+    //new
+    info1: "...",
+    info2: "الاستشاري : مكتب حجاج للإستشارات الهندسية دكتور / هشام حجاج",
   },
   {
     id: 12,
-    name: "Coffee",
-    category: "javascript",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
-    image: [img3],
+    name: "بنك HSBC",
+    image: [img52, img53, img54],
+    category: "React",
+    description: "تدعيم بشرائح الكربون فيبر",
+    owner: "( الفرع الرئيسي ) HSBC المالك : بنك",
+    time: "...",
+
+    //new
+    info1: "NEXTEP : المقاول العام",
+    info2: "الاستشاري : مكتب ADEC أ. د/ ايمن حسين",
   },
   {
     id: 13,
-    name: "Shopsy",
-    category: "react",
-    description:
-      "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    image: [img2],
+    name: "بنك HSBC",
+    image: [img55, img56],
+    category: "Tailwind",
+    description: "تدعيم بلاطة خزينة من أسفل فرع شهاب - المهندسين",
+    owner: "المالك: بنك الإمارات دبي",
+    time: "...",
+
+    //new
+    info1: "NEXTEP : المقاول العام",
+    info2: "ADEC الاستشاري : مكتب",
   },
   {
     id: 14,
-    name: "My Travel Journal",
-    category: "react",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "This website is simple and calm, but I love this project very much in terms of design and colors, and everything.",
-    image: [img3],
+    name: "معهد ناصر",
+    image: [img57, img58, img59, img60],
+    category: "Bootstrap",
+    description: "تدعيم بلاطات المدخل الرئيسي معهد ناصر",
+    owner: "المالك : وزارة الصحة",
+    time: "...",
+
+    //new
+    info1: "المقاول العام : شركة تاور للإنشاءات و العمارة",
+    info2: "الاستشاري: جامعة عين شمس أ. د/ نصر عيد",
   },
   {
     id: 15,
-    name: "Coffee",
-    category: "javascript",
-    description:
-    "HTML, CSS, JavaScript, React. Responsive on any device. it is important for me to visit website and tell me your opinion",
-    info: "It is portfolio for me, I have used HTML, CSS and JavaScript. It contains information about me and the projects I have done.",
-    image: [img1],
+    name: "الصالون الاخضر بالاسماعيلية",
+    image: [img61, img62, img63],
+    category: "Node",
+    description: "تطوير وتدعيم فرع الهيئة العامة للرعاية الصحية - تدعيم ومعالجة العناصر الإنشائية ( أعمدة ، حوائط)",
+    owner: "المالك : وزارة الصحة والسكان",
+    time: "...",
+
+    //new
+    info1: "المقاول العام : شركة تاور للإنشاءات والعمارة",
+    info2: "ICC الاستشاري : شركة الدراسات المتكاملة",
+  },
+  {
+    id: 16,
+    name: "الجناح الكويتي معهد ناصر",
+    image: [img64, img65, img66, img67],
+    category: "Mongo",
+    description: "تدعيم بلاطات معهد التمريض - الجناح الكويتي -الرعاية المتوسطة ( لمعهد ناصر )",
+    owner: "المالك : وزارة الصحة",
+    time: "الكمية المنفذة ٤٣٠٠ متر مسطح في مدة زمنية خمسة أشهر",
+
+    //new
+    info1: "المقاول العام : شركة تاور للإنشاءات و العمارة",
+    info2: "الاستشاري : جامعة عين شمس أ.د/ نصر عيد",
+  },
+  {
+    id: 17,
+    name: "الإستشعار عن بعد",
+    image: [img68, img69, img70],
+    category: "HTML",
+    description: "...",
+    owner: "..",
+    time: ".",
+
+    //new
+    info1: "...",
+    info2: "...",
   },
 ];

@@ -3,6 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin, FaLocationArrow } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const footerImg = {
   backgroundImage: `url(${footerPattern})`,
@@ -13,6 +14,15 @@ const footerImg = {
   width: "100%",
 };
 
+/*================================
+  1. Sceoll To Section Function
+==================================*/
+
+const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+};
+
+
 function Footer() {
   return (
     <section id="footer" style={footerImg} className="text-white">
@@ -22,7 +32,7 @@ function Footer() {
             Company Details
           =================== */}
 
-          <div className="py-8 px-4">
+          <div className="py-8 px-4 lg:px-0">
             <h1 id="logo" className="md:text-2xl text-lg font-bold">
               TechnoCrete <span className="text-yellow-500">Constructions</span>
             </h1>
@@ -33,7 +43,7 @@ function Footer() {
               </div>
               <h2 className="flex items-center gap-2 mb-2 mt-5">
                 <MdOutlineEmail />
-                TC@TECHNOCRETE-CONSTRUCTIONS.COM
+                  info@technocrete-constructions.com
               </h2>
             </div>
           </div>
@@ -46,10 +56,10 @@ function Footer() {
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold text-justify mb-3">COMPANY</h1>
                 <ul className="flex flex-col gap-3">
-                  <li>HOME</li>
-                  <li>ABOUT</li>
-                  <li>PROJECTS</li>
-                  <li>CONTACT</li>
+                  <Link to="/" onClick={() => scrollToSection("home")}>HOME</Link>
+                  <Link to="/" onClick={() => scrollToSection("about")}>ABOUT</Link>
+                  <Link to="/products">PROJECTS</Link>
+                  <Link to="/" onClick={() => scrollToSection("contact")}>CONTACT</Link>
                 </ul>
               </div>
             </div>
@@ -81,6 +91,7 @@ function Footer() {
                 <h4 className="mt-3">&copy; TechnoCrete | All Rights Reserved</h4>
               </div>
             </div>
+
           </div>
         </div>
       </div>

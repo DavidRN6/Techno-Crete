@@ -3,8 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Product from "./pages/Product";
 import { FaArrowUp } from "react-icons/fa6";
+import Projects from "./pages/Projects";
 
 // Load Screen
 const LoadingScreen = () => {
@@ -54,13 +54,13 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Product />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
           <Footer />
 
-          <button onClick={handleScrollTop} style={{ opacity: scroll ? 1 : 0, transition: "1s" }}>
-              <FaArrowUp className="w-9 h-9 bg-yellow-500 text-white fixed bottom-8 right-[3%] text-center border border-white/20 rounded-full p-3 
-             transition-all duration-300 shadow-lg" />
+          <button onClick={handleScrollTop} style={{ opacity: scroll ? 1 : 0, transition: "1s" }} className="w-9 h-9 bg-yellow-500 text-white fixed bottom-8 right-[3%] text-center border border-white/20 rounded-full p-3 
+             transition-all duration-300">
+              <FaArrowUp className="w-9 h-9 fixed bottom-8 right-[3%] p-[10px]" />
           </button>
         </div>
       )}

@@ -50,7 +50,7 @@ function Contact() {
               className="border-gray-400 hover:border-gray-800 transition duration-300 border rounded-[4px] w-96 lg:w-96 h-9"
             />
           </div>
-          <div className="gap-2 flex items-center mt-8">
+          <div className="gap-2 flex items-center mt-4">
             <input
               required
               placeholder="Email"
@@ -60,7 +60,7 @@ function Contact() {
               className="border-gray-400 hover:border-gray-800 transition duration-300 border rounded-[4px] w-96 h-9"
             />
           </div>
-          <div className="gap-3 flex items-center mt-8">
+          <div className="gap-3 flex items-center mt-4">
             <input
               required
               placeholder="Phone Number"
@@ -71,7 +71,7 @@ function Contact() {
             />
           </div>
 
-          <div className="mt-8 flex gap-2 items-center">
+          <div className="mt-5 flex gap-2 items-center">
             <textarea
               placeholder="Message"
               autoComplete="off"
@@ -81,7 +81,7 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-3 font-medium hover:scale-[1.1] transition-all duration-300">
+          <button className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-5 font-medium md:hover:scale-105 transition-all duration-300">
             Sent
           </button>
         </form>

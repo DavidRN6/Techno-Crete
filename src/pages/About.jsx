@@ -52,10 +52,10 @@ function About() {
         </div>
 
         <button
-          onClick={() => scrollToSection("projects")}
+          onClick={() => scrollToSection("contact")}
           className="bg-yellow-500 text-base py-3 px-6 rounded-3xl mt-6 mx-auto md:mx-0 flex items-center gap-2 font-medium transition duration-300 hover:scale-105"
         >
-          Projects{" "}
+          Contact Us{" "}
           <span>
             <FaArrowRight />
           </span>
