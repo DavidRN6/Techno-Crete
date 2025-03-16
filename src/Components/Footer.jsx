@@ -5,6 +5,10 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin, FaLocationArrow } from "react-icons/fa6";
 import { Link } from "react-router";
 
+
+/*================
+  1. Image Style
+==================*/
 const footerImg = {
   backgroundImage: `url(${footerPattern})`,
   backgroundPosition: "bottom",
@@ -75,7 +79,7 @@ function Footer() {
                 <a href="https://www.facebook.com/TechnoCrete12?rdid=4sq1ASVnmLFtWJ7M&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DDBd6QrJJ%2F#" target="_blank">
                   <FaFacebookSquare className="text-3xl hover:-translate-y-1 hover:scale-105 duration-300" />
                 </a>
-                <a href="">
+                <a href="https://www.linkedin.com/in/technocrete-construction-672093356/" target="_blank">
                   <FaLinkedin className="text-3xl hover:-translate-y-1 hover:scale-105 duration-300" />
                 </a>
               </div>

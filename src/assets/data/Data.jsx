@@ -147,7 +147,7 @@ import img70 from "./الإستشعار عن بعد/3.webp";
 
 export const products = [
   {
-    id: 1,
+    id: "1",
     name: "نافورة حديقة الدراجات",
     image: [img1, img2, img3, img4, img5, img6],
     category: "HTML",
@@ -156,7 +156,7 @@ export const products = [
     time: ".",
   },
   {
-    id: 2,
+    id: "2",
     name: "مستشفي التأمين الصحي مدينة نصر ( جاري )",
     image: [img7, img8, img9, img10, img11],
     category: "CSS",
@@ -166,7 +166,7 @@ export const products = [
     time: "خلال المدة : أغسطس 2022حتي نوفمبر 2024",
   },
   {
-    id: 3,
+    id: "3",
     name: "مصنع مودرن سيكا - لمواد العزل",
     image: [img12, img13, img14, img15, img16, img17],
     category: "JavaScript",
@@ -179,7 +179,7 @@ export const products = [
     info2: "الإستشاري : سيكا مصر",
   },
   {
-    id: 4,
+    id: "4",
     name: "مستشفى الاقصر الدولى",
     image: [img18, img19, img20, img21, img22, img23],
     category: "React",
@@ -193,7 +193,7 @@ export const products = [
     info2: "إستشاري المقاول : كلية الهندسة جامعة عين شمس",
   },
   {
-    id: 5,
+    id: "5",
     name: "مباني إدارية الكيان العسكري - العاصمة الإدارية",
     image: [img24, img25, img26, img27, img28, img29, img30],
     category: "Tailwind",
@@ -206,7 +206,7 @@ export const products = [
     info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة",
   },
   {
-    id: 6,
+    id: "6",
     name: "كنيسة العذراء مريم طريق الكباش الأثري - الأقصر",
     image: [img31, img32],
     category: "Bootstrap",
@@ -219,7 +219,7 @@ export const products = [
     info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة",
   },
   {
-    id: 7,
+    id: "7",
     name: "قبة معهد ناصر",
     image: [img33, img34, img35, img36],
     category: "Node",
@@ -232,7 +232,7 @@ export const products = [
     info2: "الاستشاري: جامعة عين شمس أ. د/ نصر عيد",
   },
   {
-    id: 8,
+    id: "8",
     name: "فندق تريومف ( الشويفات ) التجمع الخامس",
     image: [img38, img37],
     category: "Mongo",
@@ -245,7 +245,7 @@ export const products = [
     info2: "الإستشاري : الهيئة الهندسية للقوات المسلحة - إدارة المشروعات الكبري",
   },
   {
-    id: 9,
+    id: "9",
     name: "ترميم وعزل فيلا 125مرتفعات القطامية",
     image: [img39, img40, img41, img42],
     category: "HTML",
@@ -258,7 +258,7 @@ export const products = [
     info2: "الإستشاري : مكسيموس مجدي",
   },
   {
-    id: 10,
+    id: "10",
     name: "مستشفى سمنود المركزي",
     image: [img43, img44, img45],
     category: "CSS",
@@ -271,7 +271,7 @@ export const products = [
     info2: "الاستشاري : كلية الهندسة - جامعة المنصورة",
   },
   {
-    id: 11,
+    id: "11",
     name: "تدعيم بلاطات بعدد 30 شالية قرية اورلاندو ( العين السخنة )",
     image: [img46, img47, img48, img49, img50, img51],
     category: "JavaScript",
@@ -284,7 +284,7 @@ export const products = [
     info2: "الاستشاري : مكتب حجاج للإستشارات الهندسية دكتور / هشام حجاج",
   },
   {
-    id: 12,
+    id: "12",
     name: "بنك HSBC",
     image: [img52, img53, img54],
     category: "React",
@@ -297,7 +297,7 @@ export const products = [
     info2: "الاستشاري : مكتب ADEC أ. د/ ايمن حسين",
   },
   {
-    id: 13,
+    id: "13",
     name: "بنك HSBC",
     image: [img55, img56],
     category: "Tailwind",
@@ -310,7 +310,7 @@ export const products = [
     info2: "ADEC الاستشاري : مكتب",
   },
   {
-    id: 14,
+    id: "14",
     name: "معهد ناصر",
     image: [img57, img58, img59, img60],
     category: "Bootstrap",
@@ -323,7 +323,7 @@ export const products = [
     info2: "الاستشاري: جامعة عين شمس أ. د/ نصر عيد",
   },
   {
-    id: 15,
+    id: "15",
     name: "الصالون الاخضر بالاسماعيلية",
     image: [img61, img62, img63],
     category: "Node",
@@ -336,7 +336,7 @@ export const products = [
     info2: "ICC الاستشاري : شركة الدراسات المتكاملة",
   },
   {
-    id: 16,
+    id: "16",
     name: "الجناح الكويتي معهد ناصر",
     image: [img64, img65, img66, img67],
     category: "Mongo",
@@ -349,7 +349,7 @@ export const products = [
     info2: "الاستشاري : جامعة عين شمس أ.د/ نصر عيد",
   },
   {
-    id: 17,
+    id: "17",
     name: "الإستشعار عن بعد",
     image: [img68, img69, img70],
     category: "HTML",
