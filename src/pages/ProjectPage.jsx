@@ -37,7 +37,7 @@ function ProjectPage() {
       initial="hidden"
       whileInView="visible"
       variants={slideUpVariants}
-      className="pt-10 my-10 transition-opacity ease-in duration-500 opacity-100 flex flex-col gap-10"
+      className="pt-10 my-10 transition-opacity ease-in duration-500 opacity-100 flex flex-col gap-10 bg-gray-900 text-white"
     >
       {/*==============================
           Main Content (Images + Info)
@@ -66,16 +66,16 @@ function ProjectPage() {
 
         {/*============= Project Info (Right) =============*/}
         <div className="w-full xl:w-1/2 text-end px-4 lg:px-7 lg:mt-3">
-          <h1 className="font-bold text-3xl text-gray-900">
+          <h1 className="font-bold text-3xl ">
             {productData.name}
           </h1>
-          <h3 className="mt-5 text-xl text-gray-700">{productData.owner}</h3>
-          <p className="text-lg mt-5 text-gray-600">
+          <h3 className="mt-5 text-xl ">{productData.owner}</h3>
+          <p className="text-lg mt-5 ">
             {productData.description}
           </p>
-          <h3 className="mt-5 text-lg text-gray-800">{productData.time}</h3>
-          <h3 className="mt-3 text-lg text-gray-800">{productData.info1}</h3>
-          <h3 className="mt-3 text-lg text-gray-800">{productData.info2}</h3>
+          <h3 className="mt-5 text-lg ">{productData.time}</h3>
+          <h3 className="mt-3 text-lg ">{productData.info1}</h3>
+          <h3 className="mt-3 text-lg ">{productData.info2}</h3>
         </div>
       </div>
       {productData.image2 && productData.name2 && (
@@ -113,22 +113,22 @@ function ProjectPage() {
 
               {/*============= Project Info (Right) =============*/}
               <div className="w-full xl:w-1/2 text-end px-4 lg:px-7 lg:mt-3">
-                <h1 className="font-bold text-3xl text-gray-900">
+                <h1 className="font-bold text-3xl ">
                   {productData.name2}
                 </h1>
-                <h3 className="mt-5 text-xl text-gray-700">
+                <h3 className="mt-5 text-xl ">
                   {productData.owner2}
                 </h3>
-                <p className="text-lg mt-5 text-gray-600">
+                <p className="text-lg mt-5 ">
                   {productData.description2}
                 </p>
-                <h3 className="mt-5 text-lg text-gray-800">
+                <h3 className="mt-5 text-lg ">
                   {productData.time2}
                 </h3>
-                <h3 className="mt-3 text-lg text-gray-800">
+                <h3 className="mt-3 text-lg ">
                   {productData.info12}
                 </h3>
-                <h3 className="mt-3 text-lg text-gray-800">
+                <h3 className="mt-3 text-lg ">
                   {productData.info22}
                 </h3>
               </div>

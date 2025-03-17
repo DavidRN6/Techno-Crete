@@ -23,10 +23,10 @@ function Navbar() {
   return (
     <nav
       id="navbar"
-      className="w-full fixed flex justify-between items-center bg-white text-gray-800
-    px-4 py-3 lg:py-2 top-0 z-50 shadow-lg"
+      className="w-full fixed flex justify-between items-center bg-gray-900 text-white
+    px-4 py-3 lg:py-2 top-0 z-50 drop-shadow-[0_0_5px_rgba(255,255,255,0.7)] shadow-white"
     >
-      <Link to="/" onClick={() => scrollToSection("home")} id="logo" className="md:text-2xl text-lg font-bold">
+      <Link to="/" onClick={() => scrollToSection("home")} id="logo" className="md:text-2xl text-lg font-bold  drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
         TechnoCrete <span className="text-yellow-500">Constructions</span>
       </Link>
 
