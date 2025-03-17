@@ -149,7 +149,7 @@ export const products = [
   {
     id: "1",
     name: "نافورة حديقة الدراجات",
-    image: [img1, img2, img3, img4, img5, img6],
+    image: [img1, img2, img3, img4, img6, img5],
     category: "HTML",
     description: "...",
     owner: "..",
@@ -181,7 +181,7 @@ export const products = [
   {
     id: "4",
     name: "مستشفى الاقصر الدولى",
-    image: [img18, img19, img20, img21, img22, img23],
+    image: [img18, img19, img20, img21, img23, img22],
     category: "React",
     description:
       "تدعيم بلاطات داخليه بإستخدام كمر حديد بمستشفي الأقصر الدولي و تنفيذ بلاطات كابولية مستجدة",
