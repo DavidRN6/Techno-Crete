@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
+import { motion } from "framer-motion";
+import { slideUpVariants } from "../animation/animation";
 
 function ProjectPage() {
   const { productId } = useParams();
@@ -23,7 +25,12 @@ function ProjectPage() {
   }, [productId, products]);
 
   return productData ? (
-    <div className="pt-10 my-10 transition-opacity ease-in duration-500 opacity-100">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={slideUpVariants}
+      className="pt-10 my-10 transition-opacity ease-in duration-500 opacity-100"
+    >
       {/*=============
         Project Data
       ===============*/}
@@ -68,7 +75,7 @@ function ProjectPage() {
           <h3 className="mt-5 text-lg">{productData.info2}</h3>
         </div>
       </div>
-    </div>
+    </motion.div>
   ) : (
     <div className="opacity-0"></div>
   );
