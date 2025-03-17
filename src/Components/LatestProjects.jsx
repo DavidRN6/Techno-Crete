@@ -42,7 +42,7 @@ function LatestProjects() {
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        className="flex justify-center flex-wrap gap-7 lg:gap-12 md:px-[1%] 2xl:px-[9%]"
+        className="flex justify-center flex-wrap gap-9 md:mx-[1%] lg:mx-[4%]"
       >
         {latestProjects.map((item, index) => (
           <ProductItem
