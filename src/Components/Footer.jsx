@@ -37,18 +37,21 @@ function Footer() {
           =================== */}
 
           <div className="py-8 px-4 lg:px-0">
-            <h1 id="logo" className="md:text-2xl text-lg font-bold">
-              TechnoCrete <span className="text-yellow-500">Constructions</span>
-            </h1>
+            <div className="flex items-center">
+              <img src="logo.webp" alt="" className="w-16" />
+              <h1 id="logo" className="md:text-2xl text-lg font-bold">
+                TechnoCrete <span className="text-yellow-500">Constructions</span>
+              </h1>
+            </div>
             <div className="mt-6">
               <div className="flex items-center gap-3">
                 <FaLocationArrow />
                 <p>39, El-khalifa El-Maamoun ST, Roxy, Cairo</p>
               </div>
-              <h2 className="flex items-center gap-2 mb-2 mt-5">
+              <a href="mailto:info@technocrete-constructions.com`" className="flex items-center gap-2 mb-2 mt-5">
                 <MdOutlineEmail />
                   info@technocrete-constructions.com
-              </h2>
+              </a>
             </div>
           </div>
 
