@@ -21,7 +21,7 @@ function ImageWithDynamicClass({ src, alt }) {
       alt={alt}
       onLoad={handleImageLoad}
       className={`w-full rounded-lg ${
-        isTall ? "h-[300px] md:h-[400px] object-contain" : "object-cover"
+        isTall ? "h-[250px] md:h-[400px] lg:h-[450px] object-contain" : "object-cover"
       }`}
       loading="lazy"
     />

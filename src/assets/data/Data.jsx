@@ -330,7 +330,7 @@ export const products = [
   {
     id: "15",
     name: "الإستشعار عن بعد",
-    image: [img68, img69, img70, img71, img72, img73, img74, img75, img76, img77],
+    image: [img68, img69, img70, img71, img72, img73, img74, img75, img76],
     category: "HTML",
     description: "...",
     owner: "..",
