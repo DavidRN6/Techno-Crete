@@ -7,27 +7,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function ImageWithDynamicClass({ src, alt }) {
-  const [isTall, setIsTall] = useState(false);
-
-  const handleImageLoad = (event) => {
-    const { naturalWidth, naturalHeight } = event.target;
-    setIsTall(naturalHeight > naturalWidth);
-  };
-
-  return (
-    <img
-      src={src}
-      alt={alt}
-      onLoad={handleImageLoad}
-      className={`w-full rounded-lg ${
-        isTall ? "h-[250px] md:h-[400px] lg:h-[450px] object-contain" : "object-cover"
-      }`}
-      loading="lazy"
-    />
-  );
-}
-
 function ProjectPage() {
   const { productId } = useParams();
   const { products } = useContext(ShopContext);
@@ -53,8 +32,6 @@ function ProjectPage() {
     pauseOnHover: false,
   };
 
-  
-
   return productData ? (
     <motion.div
       initial="hidden"
@@ -70,9 +47,18 @@ function ProjectPage() {
         <div className="w-full xl:w-1/2 flex justify-center">
           <div className="w-[95%] shadow-lg rounded-lg overflow-hidden">
             {productData.image?.length > 0 ? (
-              <Slider {...settings}>
+              <Slider
+                className="border-2 border-yellow-500 rounded-lg shadow-yellow-500"
+                {...settings}
+              >
                 {productData.image.map((img, index) => (
-                  <ImageWithDynamicClass key={index} src={img} loading="lazy" alt={`product-img-${index}`} />
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`product-img-${index}`}
+                    className="w-full h-auto object-cover rounded-lg"
+                    loading="lazy"
+                  />
                 ))}
               </Slider>
             ) : (
