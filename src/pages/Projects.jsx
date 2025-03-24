@@ -42,7 +42,7 @@ function Projects() {
       initial="hidden"
       whileInView="visible"
       variants={slideUpVariants}
-      className=" flex flex-col lg:flex-row gap-1 lg:gap-10 pt-10 mt-2 mb-[2%] mx-[1%] "
+      className="flex flex-col lg:flex-row gap-1 lg:gap-10 pt-10 mt-2 mb-[2%] mx-[1%]"
     >
       {/*===============
         Filter Options
@@ -117,14 +117,14 @@ function Projects() {
         {/*=============
           Map Projects
         ================*/}
-        <div className="flex justify-center flex-wrap gap-6 mt-[1%]">
+        <div className="flex justify-center flex-wrap gap-6 mt-[1%] ">
           {filterProjects.map((item, index) => (
             <ProductItem
               key={index}
               id={item.id}
-              image={item.image}
+              image={item.home}
               name={item.name}
-              description={item.description}
+              description={item.miniDesc}
               owner={item.owner}
               time={item.time}
             />

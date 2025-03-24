@@ -48,9 +48,9 @@ function LatestProjects() {
           <ProductItem
             key={index}
             id={item.id}
-            image={item.image}
+            image={item.home}
             name={item.name}
-            description={item.description}
+            description={item.miniDesc}
             owner={item.owner}
           />
         ))}

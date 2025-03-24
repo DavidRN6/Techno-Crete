@@ -1,4 +1,5 @@
 import Hero from "../Components/Hero";
+import InfiniteHorizontal from "../Components/InfiniteHorizontal";
 import LatestProjects from "../Components/LatestProjects";
 
 import About from "./About";
@@ -10,6 +11,7 @@ function Home() {
       <Hero />
       <About />
       <LatestProjects />
+      <InfiniteHorizontal />
       <Contact />
     </div>
   )

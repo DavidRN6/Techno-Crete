@@ -82,6 +82,10 @@ function ProjectPage() {
         </div>
       </div>
 
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
       {productData.image2 && productData.name2 && (
         <>
           <hr className="border-t-4 border-yellow-500 my-5 w-[90%] mx-auto" />
@@ -140,6 +144,11 @@ function ProjectPage() {
           </div>
         </>
       )}
+
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
       {productData.image3 && productData.name3 && (
         <>
           <hr className="border-t-4 border-yellow-500 my-5 w-[90%] mx-auto" />
@@ -197,6 +206,104 @@ function ProjectPage() {
             </div>
           </div>
         </>
+      )}
+
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
+      {productData.image4 && productData.name4 && (
+        <div className="flex flex-col justify-center items-center mt-10 px-4">
+          <h1 className="font-bold text-3xl text-gray-900 text-center">
+            {productData.name4}
+          </h1>
+          <div className="flex flex-wrap sm:flex-nowrap justify-center gap-5 mt-10 md:px-5 border">
+            {productData.image4.map((img, index) => (
+              <img
+                src={img}
+                key={index}
+                alt="product-image"
+                className="w-full sm:w-1/2 lg:w-[40%] xl:w-[35%] rounded-lg shadow-md border-2 border-yellow-500"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
+      {productData.image5 && productData.name5 && (
+        <div className="flex flex-col justify-center items-center mt-10 px-4">
+          <h1 className="font-bold text-3xl text-gray-900 text-center">
+            {productData.name5}
+          </h1>
+          <div className="flex justify-center flex-wrap gap-5 sm:gap-3 mt-9">
+            {productData.image5.map((img, index) => (
+              <img
+                src={img}
+                key={index}
+                alt="product-image"
+                className="w-[40%] sm:w-[30%] md:w-[40%] lg:w-[14%] rounded-lg shadow-md border-2 border-yellow-500"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
+      {productData.image6 && productData.name6 && productData.image62 && (
+        <div className="flex flex-col justify-center items-center mt-10 px-4">
+          <h1 className="font-bold text-3xl text-gray-900 text-center">
+            {productData.name5}
+          </h1>
+          <div className="flex justify-center flex-wrap gap-5 sm:gap-3 mt-9">
+            {productData.image6.map((img, index) => (
+              <img
+                src={img}
+                key={index}
+                alt="product-image"
+                className="w-[40%] sm:w-[30%] md:w-[40%] lg:w-[14%] rounded-lg shadow-md border-2 border-yellow-500"
+              />
+            ))}
+          </div>
+          <div className="flex justify-center flex-wrap gap-5 sm:gap-3 mt-4">
+            {productData.image62.map((img, index) => (
+              <img
+                src={img}
+                key={index}
+                alt="product-image"
+                className="w-[80%] sm:w-[30%] md:w-[40%] lg:w-[14%] rounded-lg shadow-md border-2 border-yellow-500"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/*=================================================================
+        ===============================================================
+      ====================================================================*/}
+
+      {productData.image7 && productData.name7 && (
+        <div className="flex flex-col justify-center items-center mt-10 px-4">
+          <h1 className="font-bold text-3xl text-gray-900 text-center">
+            {productData.name7}
+          </h1>
+          <div className="flex flex-wrap sm:flex-nowrap justify-center gap-5 mt-10 md:px-5 border">
+            {productData.image7.map((img, index) => (
+              <img
+                src={img}
+                key={index}
+                alt="product-image"
+                className="w-full sm:w-1/2 lg:w-[40%] xl:w-[35%] rounded-lg shadow-md border-2 border-yellow-500"
+              />
+            ))}
+          </div>
+        </div>
       )}
     </motion.div>
   ) : (
