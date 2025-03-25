@@ -72,13 +72,13 @@ function ProjectPage() {
           <h1 className="font-bold text-3xl text-gray-900">
             {productData.name}
           </h1>
-          <h3 className="mt-5 text-xl text-gray-700">{productData.owner}</h3>
-          <p className="text-lg mt-5 text-gray-600">
+          <h3 className="mt-5 text-2xl text-gray-700">{productData.owner}</h3>
+          <p className="text-xl mt-5 text-gray-600">
             {productData.description}
           </p>
-          <h3 className="mt-5 text-lg text-gray-800">{productData.time}</h3>
-          <h3 className="mt-3 text-lg text-gray-800">{productData.info1}</h3>
-          <h3 className="mt-3 text-lg text-gray-800">{productData.info2}</h3>
+          <h3 className="mt-6 text-xl py-1 text-gray-800">{productData.time}</h3>
+          <h3 className="mt-3 text-xl py-1 text-gray-800">{productData.info1}</h3>
+          <h3 className="mt-3 text-xl text-gray-800">{productData.info2}</h3>
         </div>
       </div>
 
@@ -259,7 +259,7 @@ function ProjectPage() {
       {productData.image6 && productData.name6 && productData.image62 && (
         <div className="flex flex-col justify-center items-center mt-10 px-4">
           <h1 className="font-bold text-3xl text-gray-900 text-center">
-            {productData.name5}
+            {productData.name6}
           </h1>
           <div className="flex justify-center flex-wrap gap-5 sm:gap-3 mt-9">
             {productData.image6.map((img, index) => (
@@ -299,7 +299,7 @@ function ProjectPage() {
                 src={img}
                 key={index}
                 alt="product-image"
-                className="w-full sm:w-1/2 lg:w-[40%] xl:w-[35%] rounded-lg shadow-md border-2 border-yellow-500"
+                className="w-[90%] sm:w-[30%] xl:w-[27%] rounded-lg shadow-md border-2 border-yellow-500"
               />
             ))}
           </div>
