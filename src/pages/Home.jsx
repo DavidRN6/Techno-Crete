@@ -1,6 +1,7 @@
 import Hero from "../Components/Hero";
 import InfiniteHorizontal from "../Components/InfiniteHorizontal";
 import LatestProjects from "../Components/LatestProjects";
+import Testimonials from "../Components/Testimonials";
 
 import About from "./About";
 import Contact from "./Contact";
@@ -12,6 +13,7 @@ function Home() {
       <About />
       <LatestProjects />
       <InfiniteHorizontal />
+      <Testimonials />
       <Contact />
     </div>
   )
