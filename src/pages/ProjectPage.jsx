@@ -1,11 +1,12 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { IoMdArrowRoundBack } from "react-icons/io";
 
 function ProjectPage() {
   const { productId } = useParams();
@@ -39,6 +40,10 @@ function ProjectPage() {
       variants={slideUpVariants}
       className="pt-10 my-14 transition-opacity ease-in duration-500 opacity-100 flex flex-col gap-10"
     >
+      <Link to="/projects" className="px-[5%]  font-semibold text-lg flex items-center gap-3">
+        <IoMdArrowRoundBack />
+        Back
+      </Link>
       {/*==============================
           Main Content (Images + Info)
         ==============================*/}
@@ -76,8 +81,12 @@ function ProjectPage() {
           <p className="text-xl mt-5 text-gray-600">
             {productData.description}
           </p>
-          <h3 className="mt-6 text-xl py-1 text-gray-800">{productData.time}</h3>
-          <h3 className="mt-3 text-xl py-1 text-gray-800">{productData.info1}</h3>
+          <h3 className="mt-6 text-xl py-1 text-gray-800">
+            {productData.time}
+          </h3>
+          <h3 className="mt-3 text-xl py-1 text-gray-800">
+            {productData.info1}
+          </h3>
           <h3 className="mt-3 text-xl text-gray-800">{productData.info2}</h3>
         </div>
       </div>

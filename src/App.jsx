@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
@@ -7,23 +7,34 @@ import { FaArrowUp } from "react-icons/fa6";
 import Projects from "./pages/Projects";
 import ProjectPage from "./pages/ProjectPage";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   const [scroll, setScroll] = useState(false);
 
-  //==================
-  // Scroll To Top
-  //==================
+  //==========================
+  // Scroll To Top on Scroll
+  //==========================
   useEffect(() => {
     const handleScroll = () => setScroll(window.scrollY > 200);
     window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll); // تنظيف الحدث
+    return () => window.removeEventListener("scroll", handleScroll); 
   }, []);
 
   return (
     <>
       <div id="up">
         <Navbar />
+        <ScrollToTop /> {/* يضمن إن أي تغيير في الصفحة يعمل scroll to top */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
