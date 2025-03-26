@@ -11,7 +11,6 @@ function Projects() {
   const [filterProjects, setFilterProjects] = useState([]);
   const [category, setCategory] = useState([]);
 
-
   const toggleCategory = (e) => {
     if (category.includes(e.target.value)) {
       setCategory((prev) => prev.filter((item) => item !== e.target.value));
@@ -24,10 +23,12 @@ function Projects() {
     let projectsCopy = products.slice();
 
     if (category.length > 0) {
-      projectsCopy = projectsCopy.filter(item => category.includes(item.category))
+      projectsCopy = projectsCopy.filter((item) =>
+        category.includes(item.category)
+      );
     }
-    setFilterProjects(projectsCopy)
-  }
+    setFilterProjects(projectsCopy);
+  };
 
   useEffect(() => {
     setFilterProjects(products);
@@ -67,31 +68,49 @@ function Projects() {
           <p className="mb-3 text-sm font-medium">CATEGORIES</p>
           <div className="flex flex-col gap-6 text-sm text-gray-800">
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"HTML"} onChange={toggleCategory} /> HTML
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"دهانات-ايبوكسية"}
+                onChange={toggleCategory}
+              />{" "}
+              دهانات ايبوكسية
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"CSS"} onChange={toggleCategory} /> CSS
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"تدعيم"}
+                onChange={toggleCategory}
+              />
+              تدعيم
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"JavaScript"} onChange={toggleCategory} />
-              JavaScript
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"صب"}
+                onChange={toggleCategory}
+              />{" "}
+              صب
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"React"} onChange={toggleCategory} /> React
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"معالجة"}
+                onChange={toggleCategory}
+              />{" "}
+              معالجة
             </p>
             <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Tailwind"} onChange={toggleCategory} />{" "}
-              Tailwind
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Bootstrap"} onChange={toggleCategory} />{" "}
-              Bootstrap
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Node"} onChange={toggleCategory} /> Node
-            </p>
-            <p className="flex gap-2">
-              <input type="checkbox" className="w-3" value={"Mongo"} onChange={toggleCategory} /> Mongo
+              <input
+                type="checkbox"
+                className="w-3"
+                value={"ترميم"}
+                onChange={toggleCategory}
+              />{" "}
+              ترميم
             </p>
           </div>
         </div>

@@ -264,7 +264,7 @@ export const products = [
     name: "كنيسة العذراء مريم طريق الكباش الأثري - الأقصر",
     home: [img31],
     image: [img31, img32],
-    category: "Bootstrap",
+    category: "تدعيم",
     miniDesc: "المشروع تدعيم أساسات",
     description: "المشروع تدعيم أساسات",
     owner: "المالك : الكنيسة",
@@ -279,7 +279,7 @@ export const products = [
     name: "مستشفي التأمين الصحي مدينة نصر ( جاري )",
     home: [img12],
     image: [img12, img13, img14, img15, img16, img17],
-    category: "CSS",
+    category: "معالجة",
     miniDesc:
       "معالجة جميع العناصر الانشائية اعمدة - كمر - بلاطات مسطح ما تم تنفيذة 1600 متر مسطح",
     description:
@@ -294,7 +294,7 @@ export const products = [
     name: "مستشفى الاقصر الدولى",
     home: [img18],
     image: [img18, img19, img20, img21, img23, img22],
-    category: "React",
+    category: "تدعيم",
     miniDesc:
       "تدعيم بلاطات داخليه بإستخدام كمر حديد بمستشفي الأقصر الدولي و تنفيذ بلاطات كابولية مستجدة",
     description:
@@ -311,7 +311,7 @@ export const products = [
     name: "معهد ناصر",
     home: [img57],
     image: [img57, img58, img59, img60],
-    category: "Bootstrap",
+    category: "تدعيم",
     miniDesc: "تدعيم بلاطات المدخل الرئيسي معهد ناصر",
     description: "تدعيم بلاطات المدخل الرئيسي معهد ناصر",
     owner: "المالك : وزارة الصحة",
@@ -331,9 +331,7 @@ export const products = [
     //Extra
     name3: "قبة معهد ناصر",
     image3: [img33, img34, img35, img36],
-    description3: "...",
     owner3: "المالك : وزارة الصحة",
-    time3: "...",
     info13: "المقاول العام : شركة تاور للإنشاءات و العمارة",
     info23: "الاستشاري: جامعة عين شمس أ. د/ نصر عيد",
   },
@@ -344,7 +342,7 @@ export const products = [
     name: "بنك HSBC",
     home: [img52],
     image: [img52, img53, img54],
-    category: "React",
+    category: "تدعيم",
     miniDesc: "تدعيم بشرائح الكربون فيبر",
     description: "تدعيم بشرائح الكربون فيبر",
     owner: "( الفرع الرئيسي ) HSBC المالك : بنك",
@@ -369,7 +367,7 @@ export const products = [
       img78,
       img79,
     ],
-    category: "دهانات ايبوكسية",
+    category: "دهانات-ايبوكسية",
     miniDesc:
       "جراج الامانة العامة فى العاصمة الادارية المملوك للقوات المسلحة المصرية بدأنا اولا بتجليخ الارضية للتجهيز للدهانات",
     description:
@@ -406,7 +404,7 @@ export const products = [
     name7: "تدعيم البلاطات بكاربون فايبر",
     image7: [img111, img112, img113],
 
-    category: "دهانات ايبوكسية",
+    category: "دهانات-ايبوكسية",
     miniDesc:
       "مركز تصنيع الاقمار الصناعية ( الاستشعار عن بعد ) ( الدائرى الاوسطى )",
     description:
@@ -439,7 +437,7 @@ export const products = [
     image6: [img157, img158, img159, img160, img161, img162],
     image62: [img163, img164, img165, img166, img167],
 
-    category: "تدعيم صب",
+    category: "صب",
     miniDesc: "صب حوائط بحيرة حديقة الدراجات ( مدينة المستقبل )",
     description: "صب حوائط بحيرة حديقة الدراجات ( مدينة المستقبل )",
     info1: "تم الصب باستخدام شوت كريت بمسطح 4000 متر مربع",
@@ -452,7 +450,7 @@ export const products = [
     name: "مصنع مودرن سيكا - لمواد العزل",
     home: [img7],
     image: [img7, img8, img9, img10, img11],
-    category: "JavaScript",
+    category: "ترميم",
     miniDesc: "ترميم وتدعيم أرضيات مصنع مودرن سيكا - لمواد العزل مدينة بدر",
     description: "ترميم وتدعيم أرضيات مصنع مودرن سيكا - لمواد العزل مدينة بدر",
     owner: "المالك : سيكا مصر لكيماويات مواد البناء",
@@ -467,7 +465,7 @@ export const products = [
     name: "مباني إدارية الكيان العسكري - العاصمة الإدارية",
     home: [img24],
     image: [img24, img25, img26, img27, img28, img29, img30],
-    category: "Tailwind",
+    category: "ترميم",
     miniDesc: "ترميم وتدعيم مباني إدارية الكيان العسكري - العاصمة الإدارية",
     description: "ترميم وتدعيم مباني إدارية الكيان العسكري - العاصمة الإدارية",
     owner: "المالك : الكيان العسكرى",
@@ -481,7 +479,7 @@ export const products = [
     name: "فندق تريومف ( الشويفات ) التجمع الخامس",
     home: [img38],
     image: [img38, img37],
-    category: "Mongo",
+    category: "معالجة",
     miniDesc:
       "المشروع معالجة وحقن فواصل ومعالجة تسرب مياه حمام السباحة الرئيسي",
     description:
@@ -498,7 +496,7 @@ export const products = [
     name: "ترميم وعزل فيلا 125مرتفعات القطامية",
     home: [img39],
     image: [img39, img40, img41, img42],
-    category: "HTML",
+    category: "ترميم",
     miniDesc: "الكمية المنفذة : ٢١٠٠ متر مسطح",
     description: "الكمية المنفذة : ٢١٠٠ متر مسطح",
     owner: "المالك : شركة تروبي ١ للسياحة",
@@ -512,7 +510,7 @@ export const products = [
     name: "مستشفى سمنود المركزي",
     home: [img43],
     image: [img43, img44, img45],
-    category: "CSS",
+    category: "ترميم",
     miniDesc: "ترميم وتدعيم مستشفي سمنود المركزي",
     description: "ترميم وتدعيم مستشفي سمنود المركزي",
     owner: "المالك : وزارة الصحة والسكان",
@@ -559,7 +557,7 @@ export const products = [
     name: "بنك الإمارات دبي",
     home: [img55],
     image: [img55, img56],
-    category: "Tailwind",
+    category: "تدعيم",
     miniDesc: "تدعيم بلاطة خزينة من أسفل فرع شهاب - المهندسين",
     description: "تدعيم بلاطة خزينة من أسفل فرع شهاب - المهندسين",
     owner: "المالك: بنك الإمارات دبي",
@@ -573,7 +571,7 @@ export const products = [
     name: "الصالون الاخضر بالاسماعيلية",
     home: [img61],
     image: [img61, img62, img63],
-    category: "Node",
+    category: "تدعيم",
     miniDesc:
       "تطوير وتدعيم فرع الهيئة العامة للرعاية الصحية - تدعيم ومعالجة العناصر الإنشائية ( أعمدة ، حوائط)",
     description:
@@ -629,7 +627,7 @@ export const products = [
     name5: "المزيد من الصور و التفاصيل",
     image5: [img171, img172, img173, img174, img175, img176],
 
-    category: "تزريع",
+    category: "دهانات-ايبوكسية",
     miniDesc: "تصنيع و تركيب ونش متحرك داخل عنبر ( 7 )",
     description: "تصنيع و تركيب ونش متحرك داخل عنبر ( 7 )",
     info1: "قواعد من الجروات",
