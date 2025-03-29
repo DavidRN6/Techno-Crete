@@ -58,13 +58,13 @@ const popupVariants = {
 const CustomArrow = ({ onClick, direction }) => (
   <button
     onClick={onClick}
-    className={`absolute top-1/2 transform -translate-y-1/2 z-10 rounded-full shadow-lg text-yellow-500
+    className={`absolute top-1/2 transform -translate-y-1/2 z-10 rounded-full shadow-lg text-white bg-black/50 p-1 sm:p-2
       ${direction === "prev" ? "left-4" : "right-4"}`}
   >
     {direction === "prev" ? (
-      <FaArrowLeft className="text-2xl" />
+      <FaArrowLeft className="text-lg sm:text-2xl" />
     ) : (
-      <FaArrowRight className="text-2xl" />
+      <FaArrowRight className="text-lg sm:text-2xl" />
     )}
   </button>
 );

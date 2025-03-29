@@ -17,6 +17,7 @@ import cairo from "../assets/logos/cairo university.webp";
 import ainShams from "../assets/logos/AinShams university.webp";
 import helwan from "../assets/logos/Helwan university.webp";
 import azhar from "../assets/logos/Al-Azhar university.webp";
+import mansoura from "../assets/logos/Mansoura University.webp"
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 
@@ -44,42 +45,48 @@ const testimonialData = [
   },
   {
     id: 4,
-    image: ainShams,
+    image: mansoura,
     title: "أستاذ دكتور",
-    name: "نصر العيد",
+    name: "محمد نجيب",
   },
   {
     id: 5,
     image: ainShams,
     title: "أستاذ دكتور",
-    name: "حسن علام",
+    name: "نصر العيد",
   },
   {
     id: 6,
     image: ainShams,
     title: "أستاذ دكتور",
-    name: "خالد عباس",
+    name: "حسن علام",
   },
   {
     id: 7,
+    image: ainShams,
+    title: "أستاذ دكتور",
+    name: "خالد عباس",
+  },
+  {
+    id: 8,
     image: helwan,
     title: "أستاذ دكتور",
     name: "هشام حجاج",
   },
   {
-    id: 7,
+    id: 9,
     image: helwan,
     title: "أستاذ دكتور",
     name: "ابراهيم محفوظ",
   },
   {
-    id: 8,
+    id: 10,
     image: azhar,
     title: "أستاذ دكتور",
     name: "مصطفى قطب",
   },
   {
-    id: 9,
+    id: 11,
     image: azhar,
     title: "أستاذ دكتور",
     name: "هشام حلمى",
