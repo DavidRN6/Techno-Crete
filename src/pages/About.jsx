@@ -1,9 +1,25 @@
+/* ======================
+  table of contents
+=========================
+
+  1. Imports
+  2. Scroll To Section Function
+  3. left Section ( Content )
+  4. Right Section ( Images )
+*/
+
+/*==============
+  1. Imports
+===============*/
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 import aboutImg1 from "../assets/photos/about-img-1.webp";
 import aboutImg2 from "../assets/photos/about-img-2.webp";
 
+/*=================================
+  2. Scroll To Section Function
+===================================*/
 function About() {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -14,9 +30,9 @@ function About() {
       id="about"
       className="flex flex-col md:flex-row md:h-[80vh] py-2 px-[10%] mt-4 justify-between items-center gap-6"
     >
-      {/* =============
-        left Section
-      ================= */}
+      {/*=============================
+        3. left Section ( Content )
+      ================================*/}
 
       <motion.div
         initial="hidden"
@@ -62,9 +78,9 @@ function About() {
         </button>
       </motion.div>
 
-      {/*===============
-        Right Section
-      ==================*/}
+      {/*=============================
+        4. Right Section ( Images )
+      ================================*/}
 
       <motion.div
         initial="hidden"

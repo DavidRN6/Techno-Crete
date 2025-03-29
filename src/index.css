@@ -8,21 +8,10 @@
 
   1. General
   2. Scrollbar
-  3. Scroll2Top
+  3. Chrome, Safari, Edge, Opera
   4. Responsive
 */
 
-/* Chrome, Safari, Edge, Opera */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
 
 /*==============
   1. General
@@ -57,8 +46,22 @@ body, html {
   background: #dfab12;
 }
 
+/*==================================
+  3. Chrome, Safari, Edge, Opera
+=====================================*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /*============
-  3. Responsive
+  4. Responsive
 ==============*/
 
 @media (max-width: 350px) {
@@ -109,6 +112,3 @@ body, html {
     padding-right: 150px;
   }
 }
-
-/* className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]"  */
-/* container */

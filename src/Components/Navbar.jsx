@@ -1,17 +1,35 @@
+/* ======================
+  table of contents
+=========================
+
+  1. Imports
+  2. Scroll To Section Function
+  3. Menu Function
+  4. Logo
+  5. Menu For Large Screen
+  6. Menu For Small Screen ( Mobile Menu )
+*/
+
+/*=============
+  1. Imports
+===============*/
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  /*================================
+    2. Scroll To Section Function
+  ==================================*/
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
   };
-  /*==================
-  1. Menu Function
-====================*/
 
+  /*==================
+    3. Menu Function
+  ====================*/
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -20,8 +38,11 @@ function Navbar() {
     <nav
       id="navbar"
       className="w-full fixed flex justify-between items-center bg-white text-gray-800
-    px-4 py-3 lg:py-2 top-0 z-50 shadow-lg"
+      px-4 py-3 lg:py-2 top-0 z-50 shadow-lg"
     >
+      {/*=========
+        4. Logo
+      ============*/}
       <Link
         to="/"
         onClick={() => scrollToSection("home")}
@@ -31,6 +52,9 @@ function Navbar() {
         TechnoCrete <span className="text-yellow-500">Constructions</span>
       </Link>
 
+      {/*=========================
+        5. Menu For Large Screen
+      ============================*/}
       <ul className="lg:flex justify-center items-center gap-6 hidden">
         <Link
           to="/"
@@ -62,12 +86,13 @@ function Navbar() {
         </Link>
       </ul>
 
-      {/* ===========
-        Mobile Menu
-      ===============*/}
-
+      {/* =========================================
+        6. Menu For Small Screen ( Mobile Menu )
+      =============================================*/}
       <div className="flex items-center justify-center p-[5px] lg:hidden">
-        {/* Burger Icon */}
+        {/*==============
+          Burger Icon
+        ================*/}
         <button
           className="relative w-7 h-5 focus:outline-none"
           onClick={toggleMenu}
@@ -89,47 +114,48 @@ function Navbar() {
           ></span>
         </button>
 
-        {/* Menu Items */}
+        {/*============
+          Menu Items
+        ===============*/}
         {isMenuOpen && (
-                <div
-                className={`w-full bg-white p-4 absolute top-[45px] md:top-[55px] left-0 shadow-md  transition-all duration-500 ${
-                  isMenuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 -translate-y-4"
-                }`}
+          <div
+            className={`w-full bg-white p-4 absolute top-[45px] md:top-[55px] left-0 shadow-md  transition-all duration-500 ${
+              isMenuOpen
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 -translate-y-4"
+            }`}
+          >
+            <ul className="flex flex-col gap-2 w-full items-center justify-center">
+              <Link
+                to="/"
+                onClick={() => scrollToSection("home")}
+                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
               >
-                <ul className="flex flex-col gap-2 w-full items-center justify-center">
-                  <Link
-                    to="/"
-                    onClick={() => scrollToSection("home")}
-                    className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-                  >
-                    HOME
-                  </Link>
-                  <Link
-                    to="/"
-                    onClick={() => scrollToSection("about")}
-                    className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-                  >
-                    ABOUT
-                  </Link>
-                  <Link
-                    to="/projects"
-                    className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-                  >
-                    PROJECTS
-                  </Link>
-                  <Link
-                    to="/"
-                    onClick={() => scrollToSection("contact")}
-                    className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-                  >
-                    CONTACT US
-                  </Link>
-                </ul>
-              </div>
+                HOME
+              </Link>
+              <Link
+                to="/"
+                onClick={() => scrollToSection("about")}
+                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+              >
+                ABOUT
+              </Link>
+              <Link
+                to="/projects"
+                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+              >
+                PROJECTS
+              </Link>
+              <Link
+                to="/"
+                onClick={() => scrollToSection("contact")}
+                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+              >
+                CONTACT US
+              </Link>
+            </ul>
+          </div>
         )}
-  
       </div>
     </nav>
   );

@@ -1,6 +1,20 @@
+/* ======================
+  table of contents
+=========================
+
+  1. Imports
+  2. Card
+*/
+
+/*==============
+  1. Imports
+===============*/
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
+/*==========
+  2. Card
+============*/
 function ProductItem({ id, image, name, description, owner }) {
   return (
     <Link

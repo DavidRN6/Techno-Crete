@@ -1,3 +1,17 @@
+/* ======================
+  table of contents
+=========================
+
+  1. Imports
+  2. Number of projects shown
+  3. Title Section
+  4. Rendering Products
+  5. View All Projects Button
+*/
+
+/*==============
+  1. Imports
+===============*/
 import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import { motion } from "framer-motion";
@@ -10,15 +24,18 @@ function LatestProjects() {
   const { products } = useContext(ShopContext);
   const [latestProjects, setLatestProjects] = useState([]);
 
+  /*==============================
+    2. Number of projects shown
+  ================================*/
   useEffect(() => {
     setLatestProjects(products.slice(0, 8));
   }, []);
 
   return (
     <section id="projects">
-      {/*=========
-        Title
-      ============*/}
+      {/*==================
+        3. Title Section
+      =====================*/}
 
       <motion.div
         initial="hidden"
@@ -35,9 +52,9 @@ function LatestProjects() {
         </div>
       </motion.div>
 
-      {/*===================
-       Rendering Products
-      =====================*/}
+      {/*======================
+        4. Rendering Products
+      =========================*/}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -56,14 +73,17 @@ function LatestProjects() {
         ))}
       </motion.div>
 
-        <Link to="/projects">
-          <button className="bg-yellow-500 text-base py-3 px-6 rounded-xl mt-14 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105">
-            View All Projects{" "}
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-        </Link>
+      {/*==============================
+          5. View All Projects Button
+        ===============================*/}
+      <Link to="/projects">
+        <button className="bg-yellow-500 text-base py-3 px-6 rounded-xl mt-14 flex m-auto justify-center items-center gap-2 font-medium transition duration-300 hover:scale-105">
+          View All Projects{" "}
+          <span>
+            <FaArrowRight />
+          </span>
+        </button>
+      </Link>
     </section>
   );
 }

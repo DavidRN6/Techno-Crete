@@ -1,8 +1,25 @@
+/* ======================
+  table of contents
+=========================
+
+  1. Imports
+  2. Scroll To Section Function
+  3. Background Image
+  4. Shadow For Background
+  5. Hero Content
+*/
+
+/*==============
+  1. Imports
+===============*/
 import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 import { FaArrowRight } from "react-icons/fa6";
 import Image2 from "../assets/photos/home1.webp";
 
+/*================================
+  2. Scroll To Section Function
+==================================*/
 function Hero() {
   const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
@@ -14,13 +31,22 @@ function Hero() {
       className="bg-gray-800 relative w-full lg:h-screen sm:h-[750px] h-[650px] m-auto lg:pt-[0px] px-[20px] lg:px-[150px] flex
       justify-between items-center lg:flex-row flex-col lg:gap-5 gap-[50px] bg-cover bg-center"
     >
+      {/*=====================
+        3. Background Image
+      ========================*/}
       <img
         src={Image2}
         alt="Hero Background"
         loading="eager"
         className="absolute inset-0 w-full h-full object-cover -z-11"
       />
+      {/*==========================
+        4. Shadow For Background
+      =============================*/}
       <div className="absolute inset-0 bg-black/30 z-10"></div>
+      {/*=================
+        5. Hero Content
+      ====================*/}
       <motion.div
         initial="hidden"
         whileInView="visible"
