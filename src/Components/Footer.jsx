@@ -18,7 +18,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { IoIosCall } from "react-icons/io";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin, FaLocationArrow } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 /*================
   2. Image Style

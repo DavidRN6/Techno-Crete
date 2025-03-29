@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import { slideUpVariants } from "../animation/animation";
 import ProductItem from "./ProductItem";
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function LatestProjects() {
   const { products } = useContext(ShopContext);
