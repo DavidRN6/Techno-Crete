@@ -18,7 +18,8 @@
   14. Project Image5 Gallery
   15. Project Image6 Gallery
   16. Project Image7 Gallery
-  17. Render Popup Image Function
+  17. Project Video Gallery
+  18. Render Popup Image Function
 */
 
 /*==============
@@ -441,7 +442,7 @@ function ProjectPage() {
           <h1 className="font-bold text-3xl text-gray-900 text-center">
             {productData.name7}
           </h1>
-          <div className="flex flex-wrap sm:flex-nowrap justify-center gap-5 mt-10 md:px-5 border">
+          <div className="flex flex-wrap justify-center gap-5 mt-10 md:px-5 border">
             {productData.image7.map((img, index) => (
               <img
                 src={img}
@@ -455,8 +456,31 @@ function ProjectPage() {
         </div>
       )}
 
+      {/*============================
+        17. Project Video Gallery
+      ==============================*/}
+      {productData.video && productData.name8 && (
+        <div className="flex flex-col justify-center items-center mt-10 px-4">
+          <h1 className="font-bold text-3xl text-gray-900 text-center">
+            {productData.name8}
+          </h1>
+          <div className="flex flex-wrap sm:flex-nowrap justify-center gap-5 mt-10 md:px-5 border">
+            {productData.video.map((vid, index) => (
+              <video
+                preload="metadata"
+                muted
+                key={index}
+                src={vid}
+                controls
+                className="w-full object-cover rounded-lg shadow-md border-2 border-yellow-500 cursor-pointer"
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
       {/*=================================
-        17. Render Popup Image Function
+        18. Render Popup Image Function
       ====================================*/}
       <AnimatePresence>
         {popupImage && (
