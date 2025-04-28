@@ -15,6 +15,7 @@
 ===============*/
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -117,45 +118,47 @@ function Navbar() {
         {/*============
           Menu Items
         ===============*/}
-        {isMenuOpen && (
-          <div
-            className={`w-full bg-white p-4 absolute top-[45px] md:top-[55px] left-0 shadow-md  transition-all duration-500 ${
-              isMenuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 -translate-y-4"
-            }`}
-          >
-            <ul className="flex flex-col gap-2 w-full items-center justify-center">
-              <Link
-                to="/"
-                onClick={() => scrollToSection("home")}
-                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-              >
-                HOME
-              </Link>
-              <Link
-                to="/"
-                onClick={() => scrollToSection("about")}
-                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-              >
-                ABOUT
-              </Link>
-              <Link
-                to="/projects"
-                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-              >
-                PROJECTS
-              </Link>
-              <Link
-                to="/"
-                onClick={() => scrollToSection("contact")}
-                className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
-              >
-                CONTACT US
-              </Link>
-            </ul>
-          </div>
-        )}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -20, scale: 0.95 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="w-full bg-white p-4 absolute top-[50px] md:top-[55px] left-0 shadow-md"
+            >
+              <ul className="flex flex-col gap-2 w-full items-center justify-center">
+                <Link
+                  to="/"
+                  onClick={() => scrollToSection("home")}
+                  className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+                >
+                  HOME
+                </Link>
+                <Link
+                  to="/"
+                  onClick={() => scrollToSection("about")}
+                  className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+                >
+                  ABOUT
+                </Link>
+                <Link
+                  to="/projects"
+                  className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+                >
+                  PROJECTS
+                </Link>
+                <Link
+                  to="/"
+                  onClick={() => scrollToSection("contact")}
+                  className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
+                >
+                  CONTACT US
+                </Link>
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </nav>
   );
