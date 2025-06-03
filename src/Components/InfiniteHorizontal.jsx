@@ -36,7 +36,7 @@ const InfiniteHorizontalMarquee = () => {
               src={image}
               key={index}
               className="mx-10 sm:w-56 sm:h-40 w-36"
-              alt={`Logo ${index}`}
+              alt={`Company Logo ${index}`}
             />
           )
         )}

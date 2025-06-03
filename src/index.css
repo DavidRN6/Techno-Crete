@@ -12,7 +12,6 @@
   4. Responsive
 */
 
-
 /*==============
   1. General
 ===============*/
@@ -23,7 +22,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
+body,
+html {
   background: #f5f5f5;
   overflow-x: hidden;
 }
@@ -82,7 +82,9 @@ input[type="number"] {
     align-items: start;
   }
   #email,
-  #message,#number {
+  #name,
+  #message,
+  #number {
     width: 90%;
     margin-left: 0;
     padding: 0.5rem 0;

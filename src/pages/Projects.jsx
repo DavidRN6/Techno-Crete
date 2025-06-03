@@ -128,7 +128,7 @@ function Projects() {
           8. Map Projects
         ====================*/}
         <div className="flex justify-center flex-wrap gap-6 mt-[1%]">
-          <AnimatePresence mode="wait">
+          <AnimatePresence>
             {filterProjects.map((item) => (
               <motion.div
                 key={item.id}

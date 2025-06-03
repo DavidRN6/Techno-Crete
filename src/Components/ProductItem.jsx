@@ -20,13 +20,13 @@ function ProductItem({ id, image, name, description, owner }) {
     <Link
       to={`/project/${id}`}
       className="text-gray-800 border shadow-2xl border-gray-300 rounded-lg 
-                 transition duration-300 cursor-pointer hover:rotate-1 hover:scale-105 flex flex-col h-[370px]" // ← هنا خليت الكارت كله طوله ثابت
+      transition duration-300 cursor-pointer hover:rotate-1 hover:scale-105 flex flex-col h-[370px]"
     >
       <img
         src={image[0]}
         loading="lazy"
         alt={name}
-        className="w-[280px] rounded-t-lg h-[200px] object-cover" // ← خلت الصورة لها ارتفاع ثابت وتقص تلقائي لو كانت كبيرة
+        className="w-[280px] rounded-t-lg h-[200px] object-cover"
       />
       <div className="w-[280px] py-4 px-[0.4rem] flex flex-col justify-between flex-1">
         <div>
@@ -46,6 +46,5 @@ function ProductItem({ id, image, name, description, owner }) {
     </Link>
   );
 }
-
 
 export default ProductItem;

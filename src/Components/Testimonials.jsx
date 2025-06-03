@@ -28,8 +28,8 @@ const testimonialData = [
   {
     id: 1,
     image: cairo,
-    title: "(محافظ الجيزة سابقا) أستاذ دكتور",
-    name: "على عبد الرحمن",
+    title: "أستاذ دكتور",
+    name: "(محافظ الجيزة سابقا) على عبد الرحمن",
   },
   {
     id: 2,
@@ -165,7 +165,7 @@ function Testimonials() {
             {testimonialData.map((data) => (
               <div className="my-6" key={data.id}>
                 <div className="flex flex-col justify-center items-center bg-[#fea928]/10 gap-5 px-4 mx-4 shadow-xl rounded-xl relative py-8 min-h-[250px] h-full">
-                  <img src={data.image} alt="logo" className="w-24 h-24 object-contain" />
+                  <img src={data.image} alt="Testimonials" className="w-24 h-24 object-contain" />
                   <p className="text-gray-800 font-semibold text-lg text-center">
                     {data.title}
                   </p>

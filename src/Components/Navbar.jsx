@@ -14,18 +14,33 @@
   1. Imports
 ===============*/
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   /*================================
     2. Scroll To Section Function
   ==================================*/
   const scrollToSection = (id) => {
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     setIsMenuOpen(false);
+  };
+
+  // Handle click: scroll if same page, else just close menu and allow navigation
+  const handleClick = (path, sectionId) => {
+    if (location.pathname === path) {
+      // نفس الصفحة نعمل scroll
+      scrollToSection(sectionId);
+    } else {
+      // صفحة مختلفة: بس نقفل المينيو، والانتقال يتم عبر <Link> تلقائياً
+      setIsMenuOpen(false);
+    }
   };
 
   /*==================
@@ -46,7 +61,7 @@ function Navbar() {
       ============*/}
       <Link
         to="/"
-        onClick={() => scrollToSection("home")}
+        onClick={() => handleClick("/", "home")}
         id="logo"
         className="sm:text-2xl text-lg font-bold drop-shadow-[0_0_15px_rgba(234,179,8)]"
       >
@@ -59,28 +74,28 @@ function Navbar() {
       <ul className="lg:flex justify-center items-center gap-6 hidden">
         <Link
           to="/"
-          onClick={() => scrollToSection("home")}
+          onClick={() => handleClick("/", "home")}
           className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200"
         >
           HOME
         </Link>
         <Link
           to="/"
-          onClick={() => scrollToSection("about")}
+          onClick={() => handleClick("/", "about")}
           className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200"
         >
           ABOUT
         </Link>
         <Link
           to="/projects"
-          onClick={() => setIsMenuOpen(false)}
+          onClick={() => handleClick("/projects")}
           className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200"
         >
           PROJECTS
         </Link>
         <Link
           to="/"
-          onClick={() => scrollToSection("contact")}
+          onClick={() => handleClick("/", "contact")}
           className="font-bold cursor-pointer text-[15px] p-3 rounded-full hover:bg-yellow-500 hover:text-gray-800 transition-all duration-200"
         >
           CONTACT US
@@ -130,27 +145,28 @@ function Navbar() {
               <ul className="flex flex-col gap-2 w-full items-center justify-center">
                 <Link
                   to="/"
-                  onClick={() => scrollToSection("home")}
+                  onClick={() => handleClick("/", "home")}
                   className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
                 >
                   HOME
                 </Link>
                 <Link
                   to="/"
-                  onClick={() => scrollToSection("about")}
+                  onClick={() => handleClick("/", "about")}
                   className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
                 >
                   ABOUT
                 </Link>
                 <Link
                   to="/projects"
+                  onClick={() => handleClick("/projects")}
                   className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
                 >
                   PROJECTS
                 </Link>
                 <Link
                   to="/"
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => handleClick("/", "contact")}
                   className="w-full text-center text-yellow-500 font-semibold cursor-pointer p-2 rounded-lg hover:bg-yellow-500 hover:text-gray-800"
                 >
                   CONTACT US
